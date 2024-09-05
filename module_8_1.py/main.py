@@ -1,8 +1,12 @@
 def add_everything_up(a, b):
-    return str(a) + str(b)
+    try:
+        res = a + b
+        return round(res, 3)
+    except TypeError:
+        return f'{a}{b}'
 
 
-# Примеры использования
+
 
 print(add_everything_up(123.456, 'строка'))
 print(add_everything_up('яблоко', 4215))
