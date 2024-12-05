@@ -1,0 +1,262 @@
+Index: .idea/inspectionProfiles/Project_Default.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,24 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <profile version="1.0">
+-    <option name="myName" value="Project Default" />
+-    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredPackages">
+-        <value>
+-          <list size="11">
+-            <item index="0" class="java.lang.String" itemvalue="async-timeout" />
+-            <item index="1" class="java.lang.String" itemvalue="Babel" />
+-            <item index="2" class="java.lang.String" itemvalue="certifi" />
+-            <item index="3" class="java.lang.String" itemvalue="aiogram" />
+-            <item index="4" class="java.lang.String" itemvalue="charset-normalizer" />
+-            <item index="5" class="java.lang.String" itemvalue="aiohttp" />
+-            <item index="6" class="java.lang.String" itemvalue="multidict" />
+-            <item index="7" class="java.lang.String" itemvalue="yarl" />
+-            <item index="8" class="java.lang.String" itemvalue="pytz" />
+-            <item index="9" class="java.lang.String" itemvalue="attrs" />
+-            <item index="10" class="java.lang.String" itemvalue="idna" />
+-          </list>
+-        </value>
+-      </option>
+-    </inspection_tool>
+-  </profile>
+-</component>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Black">
+-    <option name="sdkName" value="Python 3.12 (module_13_5.py)" />
+-  </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (module_13_5.py)" project-jdk-type="Python SDK" />
+-</project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/profiles_settings.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: .idea/module_13_5.py.iml
+===================================================================
+diff --git a/.idea/module_13_5.py.iml b/.idea/module_13_5.py.iml
+deleted file mode 100644
+--- a/.idea/module_13_5.py.iml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,10 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="PYTHON_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/module_13_5.py.iml" filepath="$PROJECT_DIR$/.idea/module_13_5.py.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ /dev/null	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
+@@ -1,109 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="7748e29c-8bab-48b4-a2d4-eea0655f11b7" name="Changes" comment="mod13.5" />
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+-  </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "borisenkovvlad"
+-  }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/borisenkovvlad/homework.git",
+-    "accountId": "89c1c20e-6a4d-4b6f-a927-77ff03edf238"
+-  }
+-}]]></component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 0
+-}]]></component>
+-  <component name="ProjectId" id="2oWbnZiZ1a1rxPJSDjV2SLEgXE2" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.main.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "main"
+-  }
+-}]]></component>
+-  <component name="RunManager">
+-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+-      <module name="module_13_5.py" />
+-      <option name="ENV_FILES" value="" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-  </component>
+-  <component name="SharedIndexes">
+-    <attachedChunks>
+-      <set>
+-        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+-      </set>
+-    </attachedChunks>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="7748e29c-8bab-48b4-a2d4-eea0655f11b7" name="Changes" comment="" />
+-      <created>1730988447977</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1730988447977</updated>
+-    </task>
+-    <task id="LOCAL-00001" summary="mod13.5">
+-      <option name="closed" value="true" />
+-      <created>1730988699148</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1730988699148</updated>
+-    </task>
+-    <option name="localTasksCounter" value="2" />
+-    <servers />
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="mod13.5" />
+-    <option name="LAST_COMMIT_MESSAGE" value="mod13.5" />
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+-          <url>file://$PROJECT_DIR$/main.py</url>
+-          <line>17</line>
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../pythonProject/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/pythonProject.iml\" filepath=\"$PROJECT_DIR$/.idea/pythonProject.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/modules.xml b/../pythonProject/.idea/modules.xml
+--- a/../pythonProject/.idea/modules.xml	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ b/../pythonProject/.idea/modules.xml	(date 1733342408298)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/.idea/pythonProject.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/PZ.iml" filepath="$PROJECT_DIR$/.idea/PZ.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: ../pythonProject/main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 1st program\r\nprint(9 ** 0.5 * 5)\r\n# 2nd program\r\nprint(9.99 > 9.98 and 1000 != 1000.1)\r\n# 3rd program\r\nprint(a := 2 * 2 + 2)\r\nprint(b := 2 * (2 + 2))\r\nprint(a == b)\r\n# 4th program\r\nprint(int(float('123.456')*10)%10)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/main.py b/../pythonProject/main.py
+--- a/../pythonProject/main.py	(revision 4175db90f4bdc0558a2ca36c5f5ff449a8ac99c8)
++++ b/../pythonProject/main.py	(date 1733342181602)
+@@ -7,4 +7,4 @@
+ print(b := 2 * (2 + 2))
+ print(a == b)
+ # 4th program
+-print(int(float('123.456')*10)%10)
++print ( int ( float ('123.456') * 10) % 10)
