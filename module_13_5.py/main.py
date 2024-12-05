@@ -9,61 +9,78 @@ import asyncio
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
-api = '759'
+api = '...'
 bot = Bot(token=api)
-dp = Dispatcher(bot, storage=MemoryStorage())
-
-# инициализируем клавиатуру, с возможностью подстраивания под размеры интерфейса устройства
-kb = ReplyKeyboardMarkup(resize_keyboard=True)
-button_1 = KeyboardButton(text='Расчитать')   # создаём кнопки
-button_2 = KeyboardButton(text='Информация')
-kb.row(button_1, button_2)   # добавляем кнопки в клавиатуру  в ряд
-# kb.add(button_1)  # добавляем кнопки в клавиатуру построчно
-# kb.add(button_2)
+dp = Dispatcher(bot=bot, storage=MemoryStorage())
 
 class UserState(StatesGroup):
-    age = State()   # Состояние ожидания ввода возраста
-    growth = State()    # Состояние ожидания ввода роста
-    weight = State()    # Состояние ожидания ввода веса
+    age = State()
+    growth = State()
+    weight = State()
 
-@dp.message_handler(commands = ['start'])
-async def start_(message):
-    await message.answer(text='Привет, я бот помогающий твоему здоровью', reply_markup=kb)
+kb = ReplyKeyboardMarkup(resize_keyboard=True)
+button1 = KeyboardButton(text='Рассчитать')
+button2 = KeyboardButton(text='Информация')
+kb.row(button1, button2)
+# kb.add..., kb.insert...
 
-@dp.message_handler(text = ['Информация'])
-async def inform(message):                 # Информация
-    await message.answer('Это информация о боте')
+@dp.message_handler(commands=['start'])
+async def start(message):
+    await message.answer('Привет! Я -- бот помогающий твоему здоровью.',
+                         reply_markup=kb)
 
-
-@dp.message_handler(text = ['Расчитать'])
+@dp.message_handler(text='Рассчитать')
 async def set_age(message):
     await message.answer('Введите свой возраст:')
     await UserState.age.set()
 
+
+@dp.message_handler(text='Информация')
+async def info(message):
+    await message.answer('Я -- бот, рассчитывающий норму ккал по упрощенной формуле Миффлина-Сан Жеора.')
+
+
 @dp.message_handler(state=UserState.age)
 async def set_growth(message, state):
     await state.update_data(age=message.text)
-    await message.answer('Введите свой рост:')
+    await message.answer('Введите свой рост (см):')
     await UserState.growth.set()
+
 
 @dp.message_handler(state=UserState.growth)
 async def set_weight(message, state):
     await state.update_data(growth=message.text)
-    data = await state.get_data()
-    await message.answer('Введите свой вес:')
+    await message.answer('Введите свой вес (кг):')
     await UserState.weight.set()
+
 
 @dp.message_handler(state=UserState.weight)
 async def send_calories(message, state):
     await state.update_data(weight=message.text)
     data = await state.get_data()
-    result = (10 * int(data['weight'])) + (6.25 * float(data['growth'])) - (5 * int(data['age'])) - 161
-    await message.answer(f"Ваша норма каллорий {result}")
+
+    try:
+        age = float(data['age'])
+        weight = float(data['weight'])
+        growth = float(data['growth'])
+    except:
+        await message.answer(f'Не могу конвертировать введенные значения в числа.')
+        await state.finish()
+        return
+
+    # Упрощенный вариант формулы Миффлина-Сан Жеора:
+    # для мужчин: 10 х вес (кг) + 6,25 x рост (см) – 5 х возраст (г) + 5
+    calories_man = 10 * weight + 6.25 * growth - 5 * age + 5
+    #для женщин: 10 x вес (кг) + 6,25 x рост (см) – 5 x возраст (г) – 161
+    calories_wom = 10 * weight + 6.25 * growth - 5 * age - 161
+    await message.answer(f'Норма (муж.): {calories_man} ккал')
+    await message.answer(f'Норма (жен.): {calories_wom} ккал')
     await state.finish()
 
+
 @dp.message_handler()
-async def start_any(message):
-    await message.answer('Введите команду /start чтобы начать общение')
+async def all_messages(message):
+    print(f'Получено: {message.text}')
 
 
 if __name__ == '__main__':
