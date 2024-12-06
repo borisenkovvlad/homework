@@ -32,5 +32,5 @@ cursor.execute('SELECT Avg(balance) FROM Users;')
 avg_balance = cursor.fetchall()[0][0]
 print('Средний баланс: ', avg_balance, '| all_balances/total_users=', all_balances/total_users)
 
-
+connection.commit()
 connection.close()
