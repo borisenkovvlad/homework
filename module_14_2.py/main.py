@@ -3,7 +3,7 @@ import sqlite3
 def print_users(users):
     for i in range(len(users)):
         print(f'Имя: {users[i][1]} | Почта: {users[i][2]} | Возраст: {users[i][3]} | Баланс: {users[i][4]}')
-
+connection.commit()
 
 connection = sqlite3.connect('not_telegram.db')
 cursor = connection.cursor()
