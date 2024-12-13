@@ -1,19 +1,14 @@
-from fastapi import FastAPI
-
+from fastapi import FastAPI, Query
 app = FastAPI()
-
 @app.get("/")
-async def welcome() -> dict:
-    return {"message": "Главная страница"}
-
+async def Get_main_page():
+    return "Главная страница"
 @app.get("/user/admin")
-async def welcome() -> dict:
-    return {"message": "Вы вошли как администратор"}
-
+async def Get_admin_admin():
+    return "Вы вошли как администратор"
 @app.get("/user/{user_id}")
-async def usid(user_id:str) -> dict:
-    return {"message": f"Вы вошли как пользователь № {user_id}"}
-
-@app.get("/user/{user_name}/{age}")
-async def usinf(user_name:str, age: str) -> dict:
-    return {"message": f"Информация о пользователе. Имя: {user_name}, Возраст: {age}"}
+async def Get_user_Number(user_id: int):
+    return {f"Вы вошли как пользователь № {user_id}"}
+@app.get("/user")
+async def Get_user_info(username: str = Query(...), age: int = Query(...)):
+    return {f"Информация о пользователе. Имя: '{username}', Возраст: {age}."}
