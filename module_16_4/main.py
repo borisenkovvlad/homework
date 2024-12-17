@@ -1,46 +1,56 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Body, HTTPException
 from pydantic import BaseModel
-
+from typing import List
 
 app = FastAPI()
+
 users = []
 
 
 class User(BaseModel):
-    id: int
+    id: int = None
     username: str
-    age: int
+    age: None
 
 
-@app.get("/user")
-async def get_user():
+@app.get('/users')
+async def get_user_page() -> List[User]:
     return users
 
 
 @app.post('/user/{username}/{age}')
-async def users_info(username: str, age: int):
-    new_user = User(id=len(users) + 1, username=username, age=age)
-    users.append(new_user)
-    return new_user
+async def user_register(user: User, username: str, age: int):
+    len_user = len(users)
+    if len_user == 0:
+        user.id = 1
+    else:
+        user.id = users[len_user - 1].id + 1
+    user.username = username
+    user.age = age
+    users.append(user)
+    return user
 
 
 @app.put('/user/{user_id}/{username}/{age}')
-async def update_user(user_id: int, username: str, age: int):
-    try:
-        users[user_id - 1] = User(id=user_id, username=username, age=age)
-        return users[user_id - 1]
-    except IndexError:
-        raise HTTPException(status_code=404, detail="User was notfound")
+async def update_user(user_id: int, username: str, age: int, user: str = Body()):
+    raise1 = True
+    for edit_user in users:
+        if edit_user.id == user_id:
+            edit_user.username = username
+            edit_user.age = age
+            return edit_user
+    if raise1:
+        raise HTTPException(status_code=404, detail='User was not found')
 
 
 @app.delete('/user/{user_id}')
 async def delete_user(user_id: int):
-    if user_id == users[user_id - 1].id:
-        return users.pop(user_id - 1)
-    else:
-        raise HTTPException(status_code=404, detail="User was not found")
-
-
-
-
-# python -m uvicorn Module_16.Lesson_4.module_16_4:app
+    raise2 = True
+    ind_del = 0
+    for delete_user in users:
+        if delete_user.id == user_id:
+            users.pop(ind_del)
+            return delete_user
+        ind_del += 1
+    if raise2:
+        raise HTTPException(status_code=404, detail='User was not found')
