@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fca4bb1c-b23d-4f43-8e88-8b2b441e750e" name="Changes" comment="Merge remote-tracking branch 'origin/main'" />
+    <list default="true" id="fca4bb1c-b23d-4f43-8e88-8b2b441e750e" name="Changes" comment="Dj_h" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,12 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734795859132</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dj_h">
+      <option name="closed" value="true" />
+      <created>1734798821614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734798821614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="Dj_h" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dj_h" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
