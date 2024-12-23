@@ -1,9 +1,11 @@
 from django.shortcuts import render
 
+# Create your views here.
 
-def shab_class(request):
-    return render(request, 'index1.html')
+class shab_class(TemplateView):
+    template_name = 'index1.html'
 
 
 def shab_func(request):
     return render(request, 'index2.html')
+
