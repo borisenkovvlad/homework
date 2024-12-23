@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fca4bb1c-b23d-4f43-8e88-8b2b441e750e" name="Changes" comment="Dj_h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -61,11 +59,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GIT\homework\django_home\UrbanDjango\templates" />
-      <recent name="C:\GIT\homework\django_home" />
+      <recent name="C:\GIT\homework\django_home\UrbanDjango" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GIT\homework\django_home\UrbanDjango" />
       <recent name="C:\GIT\homework\django_home" />
+      <recent name="C:\GIT\homework\django_home\UrbanDjango" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,23 +122,7 @@
       <option name="project" value="LOCAL" />
       <updated>1734798821614</updated>
     </task>
-    <task id="LOCAL-00003" summary="Dj_h">
-      <option name="closed" value="true" />
-      <created>1734948097256</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1734948097256</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Dj_h">
-      <option name="closed" value="true" />
-      <created>1734948107676</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1734948107676</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +133,11 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/UrbanDjango/task2/views.py</url>
           <option name="timeStamp" value="2" />
