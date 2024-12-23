@@ -1,9 +1,24 @@
 from django.shortcuts import render
 
 
-def shab_class(request):
-    return render(request, 'index1.html')
+
+def game_platform(request):
+    return render(request, "third_task/platform.html")
 
 
-def shab_func(request):
-    return render(request, 'index2.html')
+def game(request):
+    games = {
+        "first": "Atomic Heart",
+        "second": "Cyberpank",
+        "third": "PayDay 2"
+
+    }
+    return render(request, "third_task/games.html", context=games)
+
+
+def cart(request):
+    return render(request, "third_task/cart.html")
+
+
+
+# Create your views here.
