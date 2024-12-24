@@ -1,0 +1,22 @@
+{% extends "menu.html" %}
+
+{% block titlename %}Магазин{% endblock %}
+
+{% block pagename %}Игры{% endblock %}
+
+{% block main_content %}
+    {{ block.super }}
+    <h3>Страница для выбора товаров</h3>
+
+    <ul class="product-list">
+        <!-- Перебираем коллекцию products -->
+        {% for game in products %}
+            <li>
+                {{ game.title }} | {{ game.description }}. Стоимость: {{ game.cost }}
+                <button class="buy-button">Купить</button>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/platform"><button>Вернуться на главную</button></a>
+{% endblock %}
